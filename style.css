@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'montserrat' ,sans-serif;
+    background-image: url(stunning-hd-nature-photo.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    background: linear-gradient(to top ,rgba(255,1,1 ,.1), rgba(10,10,10 , .5));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input{
+    width: 100%;
+    max-width: 280px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: rgba(255,255,250 , .4);
+    border-radius: 18px 0 18px 0;
+    color: rgb(236, 24, 130);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .3s ease-out;
+}
+
+header input::placeholder{
+    color: wheat;
+
+}
+
+header input:focus{
+    background-color: rgba(62, 27, 160, 0.5);
+    border-bottom: 2px solid rgb(0, 255, 42);
+    border-radius: 18px;
+}
+main{
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.location .date {
+
+    color: #fff;
+    font-size: 17px;
+
+
+}
+.main-temp .temp{
+    font-size: 120px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 2px 3px gray;
+    margin: 30px 0;
+}
+
+.main-temp .temp span{
+    font-weight: 500;
+}
+.main-temp .weather{
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: 1px 2px rgb(36, 34, 34);
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main-temp .hi-low{
+    font-size: 20px;
+    color: #fff;
+}
+
+@media (max-width:900px) {
+    .app-wrap{
+        display: grid;
+        grid-template-columns: 100%;
+    } 
+    .main-temp .temp{
+        font-size: 80px;
+    }
+}
